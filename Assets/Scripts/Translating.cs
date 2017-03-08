@@ -20,7 +20,7 @@ public class Translating : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-    if (isEnabled) {
+    if (!isEnabled) {
       return;
     }
 		transform.position = Vector3.Slerp(transform.position, curEndPoint, Time.deltaTime * speed);
